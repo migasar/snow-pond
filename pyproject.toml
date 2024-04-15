@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "snow-pond"
+version = "0.1.0"
+description = "A POC of the integration of dbt-core with Snowflake"
+authors = ["Mickael GASPAR <migatsar@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dbt-snowflake = "^1.7"
+Jinja2 = "^3.1"
+prefect = "^2.17"
+prefect-dbt = "^0.4"
+prefect-snowflake = "^0.27"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3"
+sqlfluff = "^3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
